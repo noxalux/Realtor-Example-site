@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Florida Luxe Realty</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Private Consultation | Florida Luxe Realty</title>
+
+  <meta name="description" content="Request a confidential consultation with Florida Luxe Realty and access Florida’s most prestigious luxury properties. Personalized service for discerning buyers and sellers.">
+
+  <meta name="keywords" content="Florida luxury real estate consultation, private real estate agent Florida, confidential real estate Florida, high net worth buyers Florida homes">
+
   <link rel="stylesheet" href="css/style.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
@@ -30,23 +38,60 @@
 
 <section class="hero about-hero">
   <div class="hero-content">
-    <h1>Contact Florida Luxe Realty</h1>
-    <p>Let's find your dream home together</p>
+    <h1>Request Your Private Consultation</h1>
+    <p>Florida Luxe Realty offers a highly curated, private client experience tailored to high-net-worth individuals, celebrities, executives, and international investors seeking Florida’s most exceptional residences. Discretion, expertise, and white-glove service are the hallmarks of every relationship we build.</p>
   </div>
 </section>
 
 <section class="about-section">
   <div class="container">
-    <h2>Get in Touch</h2>
-    <p>We'd love to hear from you. Whether you're buying, selling, or exploring your real estate options, Florida Luxe Realty is here to guide you every step of the way.</p>
+    <h2>Confidential Client Intake Form</h2>
 
-    <p><strong>Email:</strong> info@floridaluxerealty.com<br>
-    <strong>Phone:</strong> (123) 456-7890</p>
+    <p>We invite you to complete the confidential inquiry below to schedule a personalized consultation with our senior advisory team. All information provided is handled with the strictest confidence, ensuring an experience that honors your privacy, your time, and your aspirations.</p>
 
-    <h3>Office Locations:</h3>
-    <p>Miami, Naples, Tampa, Orlando</p>
+    <form class="contact-form" action="mailto:info@floridaluxerealty.com" method="POST" enctype="text/plain">
+      
+      <label for="name">Full Legal Name*</label>
+      <input type="text" id="name" name="name" required>
 
-    <a href="mailto:info@floridaluxerealty.com" class="view-listings">Send Us a Message</a>
+      <label for="email">Primary Email Address*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Preferred Phone Number*</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="preferred-method">Preferred Contact Method*</label>
+      <select id="preferred-method" name="preferred-method" required>
+        <option value="">Select One</option>
+        <option value="Phone Call">Phone Call</option>
+        <option value="Email">Email</option>
+        <option value="Text Message">Text Message</option>
+      </select>
+
+      <label for="interest">Primary Interest*</label>
+      <select id="interest" name="interest" required>
+        <option value="">Select One</option>
+        <option value="Purchasing a Property">Purchasing a Property</option>
+        <option value="Selling a Property">Selling a Property</option>
+        <option value="Private Consultation">Private Consultation</option>
+      </select>
+
+      <label for="budget">Target Investment Range*</label>
+      <select id="budget" name="budget" required>
+        <option value="">Select One</option>
+        <option value="$1M - $3M">$1M - $3M</option>
+        <option value="$3M - $5M">$3M - $5M</option>
+        <option value="$5M - $10M">$5M - $10M</option>
+        <option value="Above $10M">Above $10M</option>
+      </select>
+
+      <label for="message">Tell Us About Your Goals*</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit" class="view-listings">Submit Confidential Inquiry</button>
+    </form>
+
+    <p><em>Thank you for considering Florida Luxe Realty. A member of our Executive Client Services team will respond personally within 24 hours to arrange your private consultation.</em></p>
   </div>
 </section>
 
