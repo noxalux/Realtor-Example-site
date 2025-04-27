@@ -1,195 +1,86 @@
-/* Base Styles */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  scroll-behavior: smooth;
-}
-
-/* Navbar */
-header {
-  background-color: #11214d;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
-  color: #e0b437;
-  font-weight: 700;
-}
-
-/* Nav Links */
-.nav-links {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links a {
-  color: #e0b437;
-  font-size: 1.1rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ffffff;
-}
-
-/* Mobile Menu Icon */
-.menu-icon {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #e0b437;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
-/* Morph to X */
-.menu-icon.open .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.menu-icon.open .bar:nth-child(2) {
-  opacity: 0;
-}
-.menu-icon.open .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Mobile Nav */
-@media (max-width: 768px) {
-  .menu-icon {
-    display: flex;
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 60%;
-    height: 100vh;
-    background-color: rgba(17, 33, 77, 0.95);
-    backdrop-filter: blur(10px);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: right 0.3s ease;
-    z-index: 999;
-  }
-
-  .nav-links.open {
-    right: 0;
-  }
-
-  .nav-links a {
-    font-size: 2rem;
-    padding: 1.5rem 0;
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-}
-
-/* Hero Section */
-.hero {
-  height: 90vh;
-  background: url('../assets/images/house1.png') center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-.hero-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-/* About Page Hero */
-.about-hero {
-  background: url('../assets/images/about-bg.png') center/cover no-repeat;
-}
-
-/* Buttons */
-button, .view-listings {
-  background-color: #e0b437;
-  color: #11214d;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-}
-
-button:hover, .view-listings:hover {
-  background-color: #ffffff;
-  color: #11214d;
-}
-
-/* About Section */
-.about-section {
-  padding: 4rem 2rem;
-  background-color: #f9f9f9;
-  text-align: center;
-}
-
-.about-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.about-section p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+.contact-form {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 40px auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* Footer */
-footer {
-  background-color: #11214d;
-  color: #ffffff;
+.contact-form label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border: 1px solid #e0b437;
+  box-shadow: 0 0 8px rgba(224, 180, 55, 0.8);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #e0b437;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #c68a2e;
+}
+
+.contact-form .view-listings {
+  background-color: #e0b437;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 50px;
   text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
-}
-
-/* Global Link Styling */
-a {
-  color: #e0b437;
+  cursor: pointer;
+  color: white;
+  display: block;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-a:hover {
-  color: #ffffff;
+.contact-form .view-listings:hover {
+  background-color: #c68a2e;
+}
+
+.contact-form .contact-message {
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #666;
+  text-align: center;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 200px;
 }
