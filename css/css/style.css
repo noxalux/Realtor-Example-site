@@ -1,3 +1,173 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Link Styling */
+a:hover {
+  color: #e0b437;
+  transition: color 0.3s ease;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #333;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-links a {
+  color: #333;
+  font-size: 1rem;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #e0b437;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.hero-content .view-listings {
+  background-color: #e0b437;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-content .view-listings:hover {
+  background-color: #d1a630;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Property Listings */
+.listing {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.listing h3 {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+.listing p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.listing p span {
+  font-weight: bold;
+  color: #e0b437;
+}
+
+.view-listings {
+  background-color: #e0b437;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.view-listings:hover {
+  background-color: #d1a630;
+}
+
+/* Contact Form */
 .contact-form {
   background: #fff;
   padding: 40px 50px;
@@ -5,15 +175,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   margin: 40px auto;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.contact-form label {
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 8px;
-  display: block;
-  font-weight: bold;
 }
 
 .contact-form input,
@@ -48,11 +209,10 @@
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  margin-top: 10px;
 }
 
 .contact-form button:hover {
-  background-color: #c68a2e;
+  background-color: #d1a630;
 }
 
 .contact-form .view-listings {
@@ -70,7 +230,7 @@
 }
 
 .contact-form .view-listings:hover {
-  background-color: #c68a2e;
+  background-color: #d1a630;
 }
 
 .contact-form .contact-message {
