@@ -28,13 +28,37 @@ header {
   font-size: 2rem;
   color: #e0b437;
 }
+
+/* Hamburger Menu */
 .menu-icon {
-  font-size: 2rem;
-  color: #e0b437;
-  cursor: pointer;
   display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
   z-index: 1001;
 }
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #e0b437;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+}
+
+/* Morph to X */
+.menu-icon.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-icon.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Desktop Nav Links */
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -138,8 +162,7 @@ footer {
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .menu-icon {
-    display: block;
-    z-index: 1001;
+    display: flex;
   }
   .nav-links {
     display: none;
