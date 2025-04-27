@@ -5,4 +5,3 @@ menuIcon.addEventListener('click', () => {
   menuIcon.classList.toggle('open');
   navLinks.classList.toggle('open');
 });
-
