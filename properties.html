@@ -2,57 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Properties | Florida Luxe Realty</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>
-  <div class="logo">Florida Luxe Realty</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="properties.html">Properties</a>
-    <a href="contact.html">Contact</a>
-    <a href="blog.html">Blog</a>
-  </nav>
+  <div class="nav-container">
+    <div class="logo">Florida Luxe Realty</div>
+    <div class="menu-icon" id="menu-icon">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="properties.html">Properties</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+  </div>
 </header>
 
-<section class="properties">
-  <h1>Explore Our Listings</h1>
-  <div class="card-grid">
-    <div class="card">
-      <img src="assets/images/house1.png" alt="Beachfront Villa">
-      <h3>Beachfront Villa</h3>
-      <p>$4,500,000 | Miami Beach</p>
-    </div>
-    <div class="card">
-      <img src="assets/images/house2.png" alt="Modern Condo">
-      <h3>Modern Condo</h3>
-      <p>$1,200,000 | Orlando</p>
-    </div>
-    <div class="card">
-      <img src="assets/images/house3.png" alt="Luxury Family Home">
-      <h3>Luxury Family Home</h3>
-      <p>$2,750,000 | Tampa</p>
-    </div>
+<section class="hero about-hero">
+  <div class="hero-content">
+    <h1>Our Featured Properties</h1>
+    <p>Explore luxury listings across Florida</p>
   </div>
 </section>
 
-<section class="featured-communities">
-  <h2>Featured Communities</h2>
-  <ul>
-    <li>Miami</li>
-    <li>Orlando</li>
-    <li>Tampa</li>
-  </ul>
+<section class="about-section">
+  <div class="container">
+    <h2>Available Listings</h2>
+    <p>Discover a curated selection of exclusive homes, estates, condos, and villas. Each property is handpicked to meet the highest standards of luxury living.</p>
+    <p>Contact us for private tours and personalized recommendations tailored to your dream lifestyle.</p>
+  </div>
 </section>
 
 <footer>
   <p>&copy; 2025 Florida Luxe Realty. All rights reserved.</p>
 </footer>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
