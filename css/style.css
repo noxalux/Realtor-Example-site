@@ -62,12 +62,19 @@ header {
 .nav-links {
   display: flex;
   gap: 2rem;
-}
 .nav-links a {
   color: #e0b437;
+  font-size: 2.2rem;
+  padding: 1.5rem 0;
+  width: 100%;
+  text-align: center;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  opacity: 1; /* <<< FIX: make opacity always 1 by default */
+  transform: translateY(0px); /* <<< remove initial hidden movement */
+  transition: all 0.4s ease;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .nav-links a:hover {
   text-decoration: underline;
