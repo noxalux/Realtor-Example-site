@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Florida Luxe Realty</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header id="header">
+<header>
   <div class="nav-container">
     <div class="logo">Florida Luxe Realty</div>
     <nav class="nav-links">
@@ -22,7 +22,7 @@
   </div>
 </header>
 
-<section class="hero" id="hero">
+<section class="hero">
   <div class="hero-content">
     <h1>Find Your Dream Home</h1>
     <p>Luxury Homes | Condos | Villas Across Florida</p>
@@ -30,26 +30,37 @@
   </div>
 </section>
 
-<section class="featured" id="featured">
+<section id="featured" class="featured-section">
   <h2>Featured Properties</h2>
   <div class="card-grid">
     <div class="card">
       <img src="assets/images/house1.jpg" alt="Spectacular Oceanfront Villa">
-      <h3>Spectacular Oceanfront Villa</h3>
-      <p>$7,250,000 | Palm Beach, FL</p>
-      <p>6 Bed | 7 Bath | 8,500 sqft</p>
+      <div class="card-info">
+        <h3>Spectacular Oceanfront Villa</h3>
+        <p>$7,250,000 | Palm Beach, FL</p>
+        <p>6 Bed | 7 Bath | 8,500 sqft</p>
+        <a href="#" class="btn small-btn">View Details</a>
+      </div>
     </div>
+
     <div class="card">
       <img src="assets/images/house2.jpg" alt="Skyline Penthouse Condo">
-      <h3>Skyline Penthouse Condo</h3>
-      <p>$1,950,000 | Miami, FL</p>
-      <p>3 Bed | 3 Bath | 2,200 sqft</p>
+      <div class="card-info">
+        <h3>Skyline Penthouse Condo</h3>
+        <p>$1,950,000 | Miami, FL</p>
+        <p>3 Bed | 3 Bath | 2,200 sqft</p>
+        <a href="#" class="btn small-btn">View Details</a>
+      </div>
     </div>
+
     <div class="card">
       <img src="assets/images/house3.jpg" alt="Elegant Family Estate">
-      <h3>Elegant Family Estate</h3>
-      <p>$2,300,000 | Orlando, FL</p>
-      <p>5 Bed | 4 Bath | 5,100 sqft</p>
+      <div class="card-info">
+        <h3>Elegant Family Estate</h3>
+        <p>$2,300,000 | Orlando, FL</p>
+        <p>5 Bed | 4 Bath | 5,100 sqft</p>
+        <a href="#" class="btn small-btn">View Details</a>
+      </div>
     </div>
   </div>
 </section>
