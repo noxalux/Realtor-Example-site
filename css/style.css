@@ -122,6 +122,10 @@ header {
   color: white;
 }
 
+.about-hero {
+  background: url('../assets/images/about-bg.png') center/cover no-repeat;
+}
+
 .hero-content h1 {
   font-size: 2.8rem;
   margin-bottom: 1rem;
@@ -132,25 +136,18 @@ header {
   margin-bottom: 2rem;
 }
 
-/* About Page Hero */
-.about-hero {
-  background: url('../assets/images/about-bg.png') center/cover no-repeat;
-}
-
 /* Buttons */
-button, .view-listings {
+.view-listings {
   background-color: #e0b437;
   color: #11214d;
-  border: none;
   padding: 0.8rem 1.5rem;
-  font-size: 1rem;
   border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
   text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-button:hover, .view-listings:hover {
+.view-listings:hover {
   background-color: #ffffff;
   color: #11214d;
 }
@@ -184,7 +181,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* Global Link Styling (Fix "View Listings" link color) */
+/* Global Link Styling */
 a {
   color: #e0b437;
   text-decoration: none;
